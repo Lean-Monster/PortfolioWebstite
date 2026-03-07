@@ -1,5 +1,5 @@
 import profilepic from "../assets/images/portfoliopic.jpg"
-import { ArrowDown, Type } from "lucide-react"
+import { ArrowDown } from "lucide-react"
 import TypewriteComponent from "../Components/TypewriterComponent";
 import BackgroundIconComponent from "../Components/BackgroundIconComponent";
 
