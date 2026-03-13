@@ -21,11 +21,11 @@ export default function introSection(){
     return(
         <div className="flex flex-col items-center justify-between w-full min-h-screen" id="home">
             <BackgroundIconComponent/>
-            <div className="pt-24 photo">
-                <img src={profilepic} alt="profile picture" className="z-50 border border-black rounded-full h-96 w-96"/>
+            <div className="pt-12 md:pt-24 photo">
+                <img src={profilepic} alt="profile picture" className="z-50 border border-black rounded-full h-60 w-60 sm:h-64 sm:w-64 md:h-96 md:w-96"/>
             </div>
             <TypewriteComponent/>
-            <div className="flex bg-black rounded-full animate-bounce hover:" onClick={() => scroll()}>
+            <div className="flex bg-black rounded-full animate-bounce" onClick={() => scroll()}>
                 <button className="rounded-full">
                     <ArrowDown className="" size={48}/>
                 </button>

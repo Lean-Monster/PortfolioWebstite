@@ -1,15 +1,14 @@
 export default function ProjectContainerComponent(props: {projectImage: string, projectTitle: string, projectDescription: String}){
     return(
-        <div className="flex pr-20 py-5 hover:transition-colors duration-300 hover:bg-[#b8dbd9]/10 rounded-lg w-11/12">
+        <div className="flex flex-col items-center md:flex-row md:pr-20 py-5 hover:transition-colors duration-300 hover:bg-[#b8dbd9]/10 rounded-lg md:w-11/12 w-full">
            <div className="shrink-0">
-                <img src={props.projectImage} alt={props.projectTitle} className="w-[450px] hover:scale-110 hover:transition-transform duration-300 pl-5"/>
+                <img src={props.projectImage} alt={props.projectTitle} className="w-full md:w-[450px] hover:scale-110 hover:transition-transform duration-300 px-5"/>
             </div>
-            <div className="flex flex-col pl-8">
-                <p className="pb-4 text-4xl">{props.projectTitle}</p>
-                <p className="text-xl">{props.projectDescription}</p>
+            <div className="flex flex-col px-5 md:pt-0 md:pl-8">
+                <p className="pb-4 text-2xl md:text-4xl">{props.projectTitle}</p>
+                <p className="text-base md:text-xl">{props.projectDescription}</p>
             </div> 
         </div>
-        
     )
 }
 

@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 :root {
+  width:100%;
+  min-height:100vh;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -11,11 +13,12 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #2f4550;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
-  min-width: 320px;
+  width:100%;
   min-height: 100vh;
   overflow-x:hidden;
 }
