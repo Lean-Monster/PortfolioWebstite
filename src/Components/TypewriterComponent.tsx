@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect"
 export default function TypewriteSection(){
     return(
         <div className="flex flex-col items-center -mt-24 md:-mt-48 text-[#b8dbd9] px-6 w-full text-center">
-            <div className="pb-6 text-5xl sm:text-6xl md:text-8xl">
+            <div className="pb-6 text-6xl md:text-8xl">
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter
