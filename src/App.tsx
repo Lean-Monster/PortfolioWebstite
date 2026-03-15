@@ -2,6 +2,7 @@ import IntroSection from "./Sections/IntroSection.tsx"
 import AboutSection from "./Sections/AboutSection.tsx"
 import ProjectSection from "./Sections/ProjectSection.tsx"
 import FooterSection from "./Sections/FooterSection.tsx"
+import { Analytics } from "@vercel/analytics/next"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <ProjectSection/>
         <FooterSection/>
       </main>  
+      <Analytics />
     </>
   )
 }
